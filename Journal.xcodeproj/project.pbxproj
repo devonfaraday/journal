@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2006036ED5FE9B67A970A51D /* Pods_Journal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF5906D7A936E2C6797791C /* Pods_Journal.framework */; };
+		8747A207D5D6F584A75982F3 /* Pods_JournalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB56F3CE11BFF62A136C5A19 /* Pods_JournalTests.framework */; };
 		A3DEB1AE270B65A9005E74E7 /* JournalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1AD270B65A9005E74E7 /* JournalApp.swift */; };
 		A3DEB1B0270B65A9005E74E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1AF270B65A9005E74E7 /* ContentView.swift */; };
 		A3DEB1B2270B65AB005E74E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3DEB1B1270B65AB005E74E7 /* Assets.xcassets */; };
@@ -14,6 +16,32 @@
 		A3DEB1BF270B65AB005E74E7 /* JournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1BE270B65AB005E74E7 /* JournalTests.swift */; };
 		A3DEB1C9270B65AB005E74E7 /* JournalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1C8270B65AB005E74E7 /* JournalUITests.swift */; };
 		A3DEB1CB270B65AB005E74E7 /* JournalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1CA270B65AB005E74E7 /* JournalUITestsLaunchTests.swift */; };
+		A3DEB1D8270B7CD9005E74E7 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1D7270B7CD9005E74E7 /* Profile.swift */; };
+		A3DEB1DA270B7CE7005E74E7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1D9270B7CE7005E74E7 /* Home.swift */; };
+		A3DEB1DC270B7D55005E74E7 /* JournalThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1DB270B7D55005E74E7 /* JournalThumbnail.swift */; };
+		A3DEB1DF270B7D73005E74E7 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1DE270B7D73005E74E7 /* Journal.swift */; };
+		A3DEB1E1270B8747005E74E7 /* JournalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1E0270B8747005E74E7 /* JournalView.swift */; };
+		A3DEB1E3270C1976005E74E7 /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1E2270C1976005E74E7 /* Entry.swift */; };
+		A3DEB1E5270C1A01005E74E7 /* JournalIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1E4270C1A01005E74E7 /* JournalIndex.swift */; };
+		A3DEB1E7270CA5DC005E74E7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1E6270CA5DC005E74E7 /* User.swift */; };
+		A3DEB1EA270CE0EE005E74E7 /* NewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1E9270CE0EE005E74E7 /* NewButton.swift */; };
+		A3DEB1ED270E323B005E74E7 /* Date+Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1EC270E323B005E74E7 /* Date+Journal.swift */; };
+		A3DEB1EF270E3248005E74E7 /* String+Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1EE270E3248005E74E7 /* String+Journal.swift */; };
+		A3DEB1F1270F9E5F005E74E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3DEB1F0270F9E5F005E74E7 /* GoogleService-Info.plist */; };
+		A3DEB1F3270F9EB1005E74E7 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1F2270F9EB1005E74E7 /* Login.swift */; };
+		A3DEB1F5270F9EBF005E74E7 /* Signup.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1F4270F9EBF005E74E7 /* Signup.swift */; };
+		A3DEB1F827111BCF005E74E7 /* FirebaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1F727111BCF005E74E7 /* FirebaseController.swift */; };
+		A3DEB1FB27123161005E74E7 /* GreenButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1FA27123161005E74E7 /* GreenButton.swift */; };
+		A3DEB1FE27123F27005E74E7 /* JournalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1FD27123F27005E74E7 /* JournalViewModel.swift */; };
+		A3DEB20027123F2F005E74E7 /* EntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB1FF27123F2F005E74E7 /* EntryViewModel.swift */; };
+		A3DEB20227123F38005E74E7 /* IndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB20127123F38005E74E7 /* IndexViewModel.swift */; };
+		A3DEB207271242CF005E74E7 /* JournalListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB206271242CF005E74E7 /* JournalListViewModel.swift */; };
+		A3DEB20927128E7E005E74E7 /* EntryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB20827128E7E005E74E7 /* EntryListViewModel.swift */; };
+		A3DEB20B2714B300005E74E7 /* IndexView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB20A2714B300005E74E7 /* IndexView.swift */; };
+		A3DEB20D2714B3B2005E74E7 /* EntriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB20C2714B3B2005E74E7 /* EntriesView.swift */; };
+		A3DEB20F2714B462005E74E7 /* NewEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB20E2714B462005E74E7 /* NewEntryView.swift */; };
+		A3DEB211271B7B8E005E74E7 /* EntryIndex.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3DEB210271B7B8D005E74E7 /* EntryIndex.swift */; };
+		F52B36DD532D290AAE911E56 /* Pods_Journal_JournalUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A839FA3928FBE33A0F36604 /* Pods_Journal_JournalUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +62,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22D71F39D706F1202E224DB7 /* Pods-Journal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journal.release.xcconfig"; path = "Target Support Files/Pods-Journal/Pods-Journal.release.xcconfig"; sourceTree = "<group>"; };
+		2A839FA3928FBE33A0F36604 /* Pods_Journal_JournalUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Journal_JournalUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32ACE37F0C3A3578BB4B39A7 /* Pods-Journal-JournalUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journal-JournalUITests.release.xcconfig"; path = "Target Support Files/Pods-Journal-JournalUITests/Pods-Journal-JournalUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A003C821B4EEB405B3B523B3 /* Pods-Journal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journal.debug.xcconfig"; path = "Target Support Files/Pods-Journal/Pods-Journal.debug.xcconfig"; sourceTree = "<group>"; };
 		A3DEB1AA270B65A9005E74E7 /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DEB1AD270B65A9005E74E7 /* JournalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalApp.swift; sourceTree = "<group>"; };
 		A3DEB1AF270B65A9005E74E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +76,36 @@
 		A3DEB1C4270B65AB005E74E7 /* JournalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JournalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3DEB1C8270B65AB005E74E7 /* JournalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITests.swift; sourceTree = "<group>"; };
 		A3DEB1CA270B65AB005E74E7 /* JournalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3DEB1D7270B7CD9005E74E7 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		A3DEB1D9270B7CE7005E74E7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		A3DEB1DB270B7D55005E74E7 /* JournalThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalThumbnail.swift; sourceTree = "<group>"; };
+		A3DEB1DE270B7D73005E74E7 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		A3DEB1E0270B8747005E74E7 /* JournalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalView.swift; sourceTree = "<group>"; };
+		A3DEB1E2270C1976005E74E7 /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
+		A3DEB1E4270C1A01005E74E7 /* JournalIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalIndex.swift; sourceTree = "<group>"; };
+		A3DEB1E6270CA5DC005E74E7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A3DEB1E9270CE0EE005E74E7 /* NewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewButton.swift; sourceTree = "<group>"; };
+		A3DEB1EC270E323B005E74E7 /* Date+Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Journal.swift"; sourceTree = "<group>"; };
+		A3DEB1EE270E3248005E74E7 /* String+Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Journal.swift"; sourceTree = "<group>"; };
+		A3DEB1F0270F9E5F005E74E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A3DEB1F2270F9EB1005E74E7 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A3DEB1F4270F9EBF005E74E7 /* Signup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Signup.swift; sourceTree = "<group>"; };
+		A3DEB1F727111BCF005E74E7 /* FirebaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseController.swift; sourceTree = "<group>"; };
+		A3DEB1FA27123161005E74E7 /* GreenButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenButton.swift; sourceTree = "<group>"; };
+		A3DEB1FD27123F27005E74E7 /* JournalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalViewModel.swift; sourceTree = "<group>"; };
+		A3DEB1FF27123F2F005E74E7 /* EntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewModel.swift; sourceTree = "<group>"; };
+		A3DEB20127123F38005E74E7 /* IndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
+		A3DEB206271242CF005E74E7 /* JournalListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalListViewModel.swift; sourceTree = "<group>"; };
+		A3DEB20827128E7E005E74E7 /* EntryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewModel.swift; sourceTree = "<group>"; };
+		A3DEB20A2714B300005E74E7 /* IndexView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexView.swift; sourceTree = "<group>"; };
+		A3DEB20C2714B3B2005E74E7 /* EntriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntriesView.swift; sourceTree = "<group>"; };
+		A3DEB20E2714B462005E74E7 /* NewEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEntryView.swift; sourceTree = "<group>"; };
+		A3DEB210271B7B8D005E74E7 /* EntryIndex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryIndex.swift; sourceTree = "<group>"; };
+		BB56F3CE11BFF62A136C5A19 /* Pods_JournalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JournalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C324DFD10F4C66935305F653 /* Pods-Journal-JournalUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Journal-JournalUITests.debug.xcconfig"; path = "Target Support Files/Pods-Journal-JournalUITests/Pods-Journal-JournalUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CCF5906D7A936E2C6797791C /* Pods_Journal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Journal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D233EAEC42B877AFCCA660C2 /* Pods-JournalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JournalTests.release.xcconfig"; path = "Target Support Files/Pods-JournalTests/Pods-JournalTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE09FBBF7363B56EA1E34D3F /* Pods-JournalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JournalTests.debug.xcconfig"; path = "Target Support Files/Pods-JournalTests/Pods-JournalTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2006036ED5FE9B67A970A51D /* Pods_Journal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8747A207D5D6F584A75982F3 /* Pods_JournalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +129,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52B36DD532D290AAE911E56 /* Pods_Journal_JournalUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AC45BC59DAA1AD5D4005922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCF5906D7A936E2C6797791C /* Pods_Journal.framework */,
+				2A839FA3928FBE33A0F36604 /* Pods_Journal_JournalUITests.framework */,
+				BB56F3CE11BFF62A136C5A19 /* Pods_JournalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A3DEB1A1270B65A9005E74E7 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +153,8 @@
 				A3DEB1BD270B65AB005E74E7 /* JournalTests */,
 				A3DEB1C7270B65AB005E74E7 /* JournalUITests */,
 				A3DEB1AB270B65A9005E74E7 /* Products */,
+				BB77268FDD011B928B3DF4AE /* Pods */,
+				6AC45BC59DAA1AD5D4005922 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,10 +171,15 @@
 		A3DEB1AC270B65A9005E74E7 /* Journal */ = {
 			isa = PBXGroup;
 			children = (
-				A3DEB1AD270B65A9005E74E7 /* JournalApp.swift */,
-				A3DEB1AF270B65A9005E74E7 /* ContentView.swift */,
-				A3DEB1B1270B65AB005E74E7 /* Assets.xcassets */,
+				A3DEB1FC27123F1C005E74E7 /* ViewModels */,
+				A3DEB1F927123149005E74E7 /* Styles */,
+				A3DEB1F627111BC1005E74E7 /* Firebase */,
+				A3DEB1EB270E322B005E74E7 /* Extenstions */,
+				A3DEB1DD270B7D6D005E74E7 /* Models */,
+				A3DEB1E8270CE0D8005E74E7 /* Views */,
 				A3DEB1B3270B65AB005E74E7 /* Preview Content */,
+				A3DEB1F0270F9E5F005E74E7 /* GoogleService-Info.plist */,
+				A3DEB1B1270B65AB005E74E7 /* Assets.xcassets */,
 			);
 			path = Journal;
 			sourceTree = "<group>";
@@ -127,6 +209,111 @@
 			path = JournalUITests;
 			sourceTree = "<group>";
 		};
+		A3DEB1DD270B7D6D005E74E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB1DE270B7D73005E74E7 /* Journal.swift */,
+				A3DEB1E2270C1976005E74E7 /* Entry.swift */,
+				A3DEB1E4270C1A01005E74E7 /* JournalIndex.swift */,
+				A3DEB1E6270CA5DC005E74E7 /* User.swift */,
+				A3DEB210271B7B8D005E74E7 /* EntryIndex.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A3DEB1E8270CE0D8005E74E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB1AF270B65A9005E74E7 /* ContentView.swift */,
+				A3DEB20C2714B3B2005E74E7 /* EntriesView.swift */,
+				A3DEB1D9270B7CE7005E74E7 /* Home.swift */,
+				A3DEB20A2714B300005E74E7 /* IndexView.swift */,
+				A3DEB1AD270B65A9005E74E7 /* JournalApp.swift */,
+				A3DEB1DB270B7D55005E74E7 /* JournalThumbnail.swift */,
+				A3DEB1E0270B8747005E74E7 /* JournalView.swift */,
+				A3DEB1F2270F9EB1005E74E7 /* Login.swift */,
+				A3DEB1E9270CE0EE005E74E7 /* NewButton.swift */,
+				A3DEB20E2714B462005E74E7 /* NewEntryView.swift */,
+				A3DEB1D7270B7CD9005E74E7 /* Profile.swift */,
+				A3DEB1F4270F9EBF005E74E7 /* Signup.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A3DEB1EB270E322B005E74E7 /* Extenstions */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB1EC270E323B005E74E7 /* Date+Journal.swift */,
+				A3DEB1EE270E3248005E74E7 /* String+Journal.swift */,
+			);
+			path = Extenstions;
+			sourceTree = "<group>";
+		};
+		A3DEB1F627111BC1005E74E7 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB1F727111BCF005E74E7 /* FirebaseController.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		A3DEB1F927123149005E74E7 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB1FA27123161005E74E7 /* GreenButton.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A3DEB1FC27123F1C005E74E7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB204271242AF005E74E7 /* Entry */,
+				A3DEB205271242B6005E74E7 /* Index */,
+				A3DEB203271242A9005E74E7 /* Journal */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A3DEB203271242A9005E74E7 /* Journal */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB1FD27123F27005E74E7 /* JournalViewModel.swift */,
+				A3DEB206271242CF005E74E7 /* JournalListViewModel.swift */,
+			);
+			path = Journal;
+			sourceTree = "<group>";
+		};
+		A3DEB204271242AF005E74E7 /* Entry */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB1FF27123F2F005E74E7 /* EntryViewModel.swift */,
+				A3DEB20827128E7E005E74E7 /* EntryListViewModel.swift */,
+			);
+			path = Entry;
+			sourceTree = "<group>";
+		};
+		A3DEB205271242B6005E74E7 /* Index */ = {
+			isa = PBXGroup;
+			children = (
+				A3DEB20127123F38005E74E7 /* IndexViewModel.swift */,
+			);
+			path = Index;
+			sourceTree = "<group>";
+		};
+		BB77268FDD011B928B3DF4AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A003C821B4EEB405B3B523B3 /* Pods-Journal.debug.xcconfig */,
+				22D71F39D706F1202E224DB7 /* Pods-Journal.release.xcconfig */,
+				C324DFD10F4C66935305F653 /* Pods-Journal-JournalUITests.debug.xcconfig */,
+				32ACE37F0C3A3578BB4B39A7 /* Pods-Journal-JournalUITests.release.xcconfig */,
+				FE09FBBF7363B56EA1E34D3F /* Pods-JournalTests.debug.xcconfig */,
+				D233EAEC42B877AFCCA660C2 /* Pods-JournalTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +321,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3DEB1CE270B65AB005E74E7 /* Build configuration list for PBXNativeTarget "Journal" */;
 			buildPhases = (
+				A7941357773C31DE8706E057 /* [CP] Check Pods Manifest.lock */,
 				A3DEB1A6270B65A9005E74E7 /* Sources */,
 				A3DEB1A7270B65A9005E74E7 /* Frameworks */,
 				A3DEB1A8270B65A9005E74E7 /* Resources */,
+				F642946B00CE397D05B68F11 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +340,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3DEB1D1270B65AB005E74E7 /* Build configuration list for PBXNativeTarget "JournalTests" */;
 			buildPhases = (
+				413112B875CCFE4A10D43C9C /* [CP] Check Pods Manifest.lock */,
 				A3DEB1B6270B65AB005E74E7 /* Sources */,
 				A3DEB1B7270B65AB005E74E7 /* Frameworks */,
 				A3DEB1B8270B65AB005E74E7 /* Resources */,
@@ -169,9 +359,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3DEB1D4270B65AB005E74E7 /* Build configuration list for PBXNativeTarget "JournalUITests" */;
 			buildPhases = (
+				0715E189A2F9C42665FBEDD8 /* [CP] Check Pods Manifest.lock */,
 				A3DEB1C0270B65AB005E74E7 /* Sources */,
 				A3DEB1C1270B65AB005E74E7 /* Frameworks */,
 				A3DEB1C2270B65AB005E74E7 /* Resources */,
+				D28D87C0C371F2EBFB3A169D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +425,7 @@
 			files = (
 				A3DEB1B5270B65AB005E74E7 /* Preview Assets.xcassets in Resources */,
 				A3DEB1B2270B65AB005E74E7 /* Assets.xcassets in Resources */,
+				A3DEB1F1270F9E5F005E74E7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +445,140 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0715E189A2F9C42665FBEDD8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Journal-JournalUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		413112B875CCFE4A10D43C9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JournalTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7941357773C31DE8706E057 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Journal-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D28D87C0C371F2EBFB3A169D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Journal-JournalUITests/Pods-Journal-JournalUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Journal-JournalUITests/Pods-Journal-JournalUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Journal-JournalUITests/Pods-Journal-JournalUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F642946B00CE397D05B68F11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Journal/Pods-Journal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Journal/Pods-Journal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Journal/Pods-Journal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3DEB1A6270B65A9005E74E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3DEB20027123F2F005E74E7 /* EntryViewModel.swift in Sources */,
+				A3DEB1FE27123F27005E74E7 /* JournalViewModel.swift in Sources */,
+				A3DEB1E3270C1976005E74E7 /* Entry.swift in Sources */,
+				A3DEB20927128E7E005E74E7 /* EntryListViewModel.swift in Sources */,
+				A3DEB1ED270E323B005E74E7 /* Date+Journal.swift in Sources */,
 				A3DEB1B0270B65A9005E74E7 /* ContentView.swift in Sources */,
+				A3DEB207271242CF005E74E7 /* JournalListViewModel.swift in Sources */,
+				A3DEB1D8270B7CD9005E74E7 /* Profile.swift in Sources */,
+				A3DEB1DC270B7D55005E74E7 /* JournalThumbnail.swift in Sources */,
+				A3DEB1DA270B7CE7005E74E7 /* Home.swift in Sources */,
+				A3DEB20B2714B300005E74E7 /* IndexView.swift in Sources */,
+				A3DEB1E5270C1A01005E74E7 /* JournalIndex.swift in Sources */,
+				A3DEB1F3270F9EB1005E74E7 /* Login.swift in Sources */,
+				A3DEB211271B7B8E005E74E7 /* EntryIndex.swift in Sources */,
+				A3DEB1F827111BCF005E74E7 /* FirebaseController.swift in Sources */,
+				A3DEB20F2714B462005E74E7 /* NewEntryView.swift in Sources */,
+				A3DEB1EF270E3248005E74E7 /* String+Journal.swift in Sources */,
+				A3DEB1E1270B8747005E74E7 /* JournalView.swift in Sources */,
 				A3DEB1AE270B65A9005E74E7 /* JournalApp.swift in Sources */,
+				A3DEB20D2714B3B2005E74E7 /* EntriesView.swift in Sources */,
+				A3DEB1F5270F9EBF005E74E7 /* Signup.swift in Sources */,
+				A3DEB1E7270CA5DC005E74E7 /* User.swift in Sources */,
+				A3DEB1FB27123161005E74E7 /* GreenButton.swift in Sources */,
+				A3DEB1EA270CE0EE005E74E7 /* NewButton.swift in Sources */,
+				A3DEB1DF270B7D73005E74E7 /* Journal.swift in Sources */,
+				A3DEB20227123F38005E74E7 /* IndexViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,9 +733,11 @@
 		};
 		A3DEB1CF270B65AB005E74E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A003C821B4EEB405B3B523B3 /* Pods-Journal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Journal/Preview Content\"";
@@ -425,6 +747,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -435,6 +758,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.christianmcmullin.Journal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -443,9 +767,11 @@
 		};
 		A3DEB1D0270B65AB005E74E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22D71F39D706F1202E224DB7 /* Pods-Journal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Journal/Preview Content\"";
@@ -455,6 +781,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -465,6 +792,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.christianmcmullin.Journal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,6 +801,7 @@
 		};
 		A3DEB1D2270B65AB005E74E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE09FBBF7363B56EA1E34D3F /* Pods-JournalTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -498,6 +827,7 @@
 		};
 		A3DEB1D3270B65AB005E74E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D233EAEC42B877AFCCA660C2 /* Pods-JournalTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -523,6 +853,7 @@
 		};
 		A3DEB1D5270B65AB005E74E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C324DFD10F4C66935305F653 /* Pods-Journal-JournalUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +877,7 @@
 		};
 		A3DEB1D6270B65AB005E74E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32ACE37F0C3A3578BB4B39A7 /* Pods-Journal-JournalUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
