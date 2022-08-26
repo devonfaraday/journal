@@ -39,47 +39,61 @@ struct JournalView: View {
     }
     
     var body: some View {
-        
         VStack {
             TabView(selection: $tabSelection) {
-                // tag 0 is the index of the journal 
+                // tag 0 is the index of the journal
                 IndexView(indexVM: indexVM, tabSelection: $tabSelection)
                     .tag(0)
-                ForEach(0..<entriesListVM.entries.count) { index in
+                ForEach(0 ..< self.entriesListVM.entries.count, id: \.self) { index in
                     // tag 1...x will be all of the journal entries
                     let tag = index + 1
                     EntriesView(isEditing: $isEditing, entryBody: entriesListVM.entries[index].body, entryTitle: entriesListVM.entries[index].title ?? "")
                         .tag(tag)
                 }
-                    // tab entries.count + 1 will be the last page and will be where you create your new entry
-                    NewEntryView(entryTitle: $entryTitle, entryBody: $entryBody, tag: entriesListVM.entries.count + 1)
+                // tab entries.count + 1 will be the last page and will be where you create your new entry
+                NewEntryView(entryTitle: $entryTitle, entryBody: $entryBody, isNewEntry: $isNewEntry, tag: entriesListVM.entries.count + 1)
             }
             .multilineTextAlignment(.center)
-            .tabViewStyle(.page)
-            HStack {
-                Spacer()
-                Button(action: {returnToIndex()}) {
-                    Image(systemName: "menucard")
-                        .resizable()
-                        .frame(width: 25, height: 30)
+            .onChange(of: tabSelection, perform: { newValue in
+                if tabSelection == entriesListVM.entriesCount + 1 {
+                    isNewEntry = true
                 }
-                .buttonStyle(GreenButton(width: 25, height: 30))
-                Spacer()
-                Button(action: handleNewEntryCancelEntry) {
-                    Text(isNewEntry ? "Cancel" : "New Entry")
+            })
+            .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
+            VStack {
+                switch tabSelection {
+                case 0:
+                    Text("Index")
+                case entriesListVM.entries.count + 1:
+                    Text("New Entry")
+                default:
+                    Text("\(tabSelection) / \(entriesListVM.entries.count)")
                 }
-                .buttonStyle(GreenButton(width: 85, height: 30))
-                if tabSelection != 0 {
+                HStack {
                     Spacer()
-                    Button(action: handleSaveEdit) {
-                        Text(isNewEntry || isEditing ? "Save" : "Edit")
+                    Button(action: {returnToIndex()}) {
+                        Image(systemName: "menucard")
+                            .resizable()
+                            .frame(width: 25, height: 30)
+                    }
+                    .buttonStyle(GreenButton(width: 25, height: 30))
+                    Spacer()
+                    Button(action: handleNewEntryCancelEntry) {
+                        Text(isNewEntry ? "Cancel" : "New Entry")
                     }
                     .buttonStyle(GreenButton(width: 85, height: 30))
+                    if tabSelection != 0 {
+                        Spacer()
+                        Button(action: handleSaveEdit) {
+                            Text(isNewEntry || isEditing ? "Save" : "Edit")
+                        }
+                        .buttonStyle(GreenButton(width: 85, height: 30))
+                    }
+                    Spacer()
                 }
-                Spacer()
+                .padding()
+                .foregroundColor(Color.white)
             }
-            .padding()
-            .foregroundColor(Color.white)
         }
         
     }
@@ -99,7 +113,7 @@ struct JournalView: View {
         if isNewEntry {
             handleSaveNewEntry()
         } else if isEditing {
-            handleSaveEdit()
+            handleSaveEditEntry()
         }
         isEditing = false
         isNewEntry = false
@@ -107,9 +121,11 @@ struct JournalView: View {
     
     func handleSaveNewEntry() {
         let newEntry = Entry(body: entryBody, title: entryTitle, journalRef: journalRef)
-        entriesListVM.entries.append(newEntry)
         let evm = EntryViewModel(entry: newEntry)
         evm.setEntry()
+        entriesListVM.entries.append(newEntry)
+        entryBody = ""
+        entryTitle = "Enter Title"
         indexVM.setTitle(entryRef: evm.id.uuidString, entryTitle: evm.title ?? "")
     }
     
@@ -146,14 +162,14 @@ struct JournalView: View {
 
 
 //struct JournalView_Previews: PreviewProvider {
-//    
+//
 //    static var journal = Journal(name: "Recovory", userRef: "")
 //    static var entries = [Entry(body: "This is the body", title: "Title one", journalRef: journal.id.uuidString), Entry(body: "This is the body 2", title: nil, journalRef: journal.id.uuidString), Entry(body: "This is the body 3", title: "Title two", journalRef: journal.id.uuidString)]
-//   
+//
 //    static var previews: some View {
-//       
+//
 //        JournalView(journalRef: "")
 //    }
-//    
+//
 //}
 

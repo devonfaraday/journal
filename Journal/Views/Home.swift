@@ -26,44 +26,48 @@ struct Home: View {
             VStack {
                 ScrollView {
                     LazyVGrid(columns: gridItemLayout, spacing: 20) {
-                        
-                        Button(action: { toggleCreatingNewJournal() } ) {
-                            Text("+")
-                                .font(.system(size: 25))
-                                .frame(width: 150, height: 250)
-                        }
-                        .foregroundColor(Color.white)
-                        .background(Color.blue)
-                        .cornerRadius(10)
-                        
+                        Rectangle()
+                            .frame(width: 150, height: 250)
+                            .cornerRadius(4)
+                            .shadow(color: .black, radius: 5, x: 5, y: 5)
+                            .overlay() {
+                                Button(action: { toggleCreatingNewJournal() } ) {
+                                    Image(systemName: "plus")
+                                        .font(.system(size: 25))
+                                        .frame(width: 150, height: 250)
+                                }
+                                .foregroundColor(Color.white)
+                                .background(Color.blue)
+                                .cornerRadius(4)
+                            }
                         ForEach(journalListVM.journals) { journal in
                             NavigationLink(destination: JournalView(journalRef: journal.id.uuidString)) {
                                 let jvm = JournalViewModel(journal: journal)
-                                VStack {
-                                    Text(jvm.name)
-                                        .font(.system(size: 25))
-                                        .frame(width: 150, height: 250)
-                                    Spacer()
-                                    HStack {
+                                Rectangle()
+                                    .frame(width: 150, height: 250)
+                                    .foregroundColor(Color.white)
+                                    .background(Color.blue)
+                                    .cornerRadius(10)
+                                    .shadow(color: .black, radius: 5, x: 2, y: 2)
+                                    .overlay() {
+                                        Text(jvm.name)
+                                            .font(.system(size: 25))
+                                            .frame(width: 150, height: 250)
                                         Spacer()
-                                        if jvm.isLocked == true {
-                                            Image(systemName: "lock")
-                                                .padding(4)
+                                        HStack {
+                                            Spacer()
+                                            if jvm.isLocked == true {
+                                                Image(systemName: "lock")
+                                                    .padding(4)
+                                            }
                                         }
                                     }
-                                }
-                                .frame(width: 150, height: 250)
-                                .foregroundColor(Color.white)
-                                .background(Color.blue)
-                                .cornerRadius(10)
+                                
                             }
                         }
-                        
-                        
                     }
                     .navigationTitle("Journals")
                     .navigationBarBackButtonHidden(true)
-                    
                 }
                 Button(action: logout) {
                     Text("Log out (debug only)")

@@ -15,15 +15,17 @@ struct IndexView: View {
     var body: some View {
         List(indexVM.entryIndex, id: \.self) { entry in
             HStack {
-                Text(entry.title)
+                Button(entry.title) {
+                    tabSelection = (indexVM.entryIndex.firstIndex(of: entry) ?? 0) + 1
+                }
                 Spacer()
                 Text(entry.created.toString())
             }
-                .gesture(TapGesture()
-                            .onEnded({ _ in
-                    tabSelection = (indexVM.entryIndex.firstIndex(of: entry) ?? 0) + 1
-                    print("TabSelection in IndexView: \(tabSelection)")
-                }))
+            .onTapGesture {
+                MemoryMonitor().reportMemory()
+                tabSelection = (indexVM.entryIndex.firstIndex(of: entry) ?? 0) + 1
+                print("TabSelection in IndexView: \(tabSelection)")
+            }
         }
     }
 }

@@ -11,7 +11,9 @@ struct NewEntryView: View {
     
     @Binding var entryTitle: String
     @Binding var entryBody: String
-    var tag: Int = 0
+    @Binding var isNewEntry: Bool
+    
+    var tag: Int = 0 
     
     var body: some View {
         VStack {
@@ -19,5 +21,10 @@ struct NewEntryView: View {
             TextEditor(text: $entryBody)
         }
         .tag(tag)
+        .onDisappear() {
+            isNewEntry = false
+        }
     }
+    
+    
 }

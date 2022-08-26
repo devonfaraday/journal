@@ -11,6 +11,7 @@ import SwiftUI
 class EntryListViewModel: ObservableObject {
     
     @Published var entries: [Entry] = []
+    @Published var entriesCount: Int = 0
     
     init(journalRef: String) {
         fetchEntries(journalRef: journalRef)
@@ -32,6 +33,7 @@ class EntryListViewModel: ObservableObject {
                         self.entries = self.entries.sorted { lhs, rhs in
                             return lhs.created < rhs.created
                         }
+                        self.entriesCount = self.entries.count
                     } catch {
                         print("Something went wrong")
                     }

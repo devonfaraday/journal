@@ -15,7 +15,8 @@ struct JournalThumbnail: View {
     
     var body: some View {
         if #available(iOS 15.0, *) {
-            Color.blue
+            Rectangle()
+                .foregroundColor(.blue)
                 .ignoresSafeArea()
                 .overlay {
                     VStack {
