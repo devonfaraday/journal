@@ -47,7 +47,7 @@ struct JournalView: View {
                 ForEach(0 ..< self.entriesListVM.entries.count, id: \.self) { index in
                     // tag 1...x will be all of the journal entries
                     let tag = index + 1
-                    EntriesView(isEditing: $isEditing, entryBody: entriesListVM.entries[index].body, entryTitle: entriesListVM.entries[index].title ?? "")
+                    EntriesView(isEditing: $isEditing, entryBody: entriesListVM.entries[index].body, entryTitle: entriesListVM.entries[index].title ?? "", date: entriesListVM.entries[index].dateString)
                         .tag(tag)
                 }
                 // tab entries.count + 1 will be the last page and will be where you create your new entry

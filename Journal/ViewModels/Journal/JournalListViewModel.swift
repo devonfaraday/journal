@@ -18,7 +18,7 @@ class JournalListViewModel: ObservableObject  {
     
     // forcing the unwrapping of documents o.O
     func fetchJournals() {
-        DispatchQueue.main.async {
+        DispatchQueue.global().async {
             let fbc = FirebaseController()
             if let userId = fbc.userId {
                 fbc.getDocuments(collection: .journal, whereField: .userRefKey, isEqualTo: userId) { documents, error in

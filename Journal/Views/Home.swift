@@ -36,8 +36,8 @@ struct Home: View {
                                         .font(.system(size: 25))
                                         .frame(width: 150, height: 250)
                                 }
-                                .foregroundColor(Color.white)
-                                .background(Color.blue)
+                                .foregroundColor(Color.black)
+                                .background(Color.white)
                                 .cornerRadius(4)
                             }
                         ForEach(journalListVM.journals) { journal in
@@ -46,11 +46,11 @@ struct Home: View {
                                 Rectangle()
                                     .frame(width: 150, height: 250)
                                     .foregroundColor(Color.white)
-                                    .background(Color.blue)
-                                    .cornerRadius(10)
-                                    .shadow(color: .black, radius: 5, x: 2, y: 2)
+                                    .cornerRadius(4)
+                                    .shadow(color: .black, radius: 5, x: 5, y: 5)
                                     .overlay() {
                                         Text(jvm.name)
+                                            .foregroundColor(.black)
                                             .font(.system(size: 25))
                                             .frame(width: 150, height: 250)
                                         Spacer()
@@ -75,12 +75,10 @@ struct Home: View {
             }
             .blur(radius: isCreatingNewJournal ? 10 : 0)
             if isCreatingNewJournal {
-                VStack {
-                    Text(isCreatingNewJournal ? "True" : "False")
-                    CreateNewJournalView(jlvm: journalListVM, isCreating: $isCreatingNewJournal)
-                }
+                    NewJournalView(jlvm: journalListVM, isCreating: $isCreatingNewJournal)
             }
         }
+        .background(Color.white)
     }
     
     func toggleCreatingNewJournal() {
@@ -94,41 +92,6 @@ struct Home: View {
         } catch {
             print("oops")
         }
-    }
-}
-
-struct CreateNewJournalView: View {
-    
-    @State var journalName: String = ""
-    @ObservedObject var jlvm: JournalListViewModel
-    @Binding var isCreating: Bool
-    
-    var body: some View {
-        VStack {
-            TextField("Journal Title", text: $journalName)
-                .padding()
-                .border(Color.black, width: 1)
-            Button(action: saveJournal ) {
-                Text(isCreating ? "Save" : "blah")
-            }
-            .buttonStyle(GreenButton(width: 50, height: 30))
-        }
-    }
-    
-    func saveJournal() {
-        if let userId = Firebase.Auth.auth().currentUser?.uid {
-            let journal = Journal(name: journalName, userRef: userId)
-            let jvm = JournalViewModel(journal: journal)
-            jlvm.journals.append(journal)
-            jvm.setJournal()
-            saveJournalIndex(journalRef: jvm.id.uuidString)
-        }
-        isCreating = false
-    }
-    
-    func saveJournalIndex(journalRef: String) {
-        let jivm = IndexViewModel(journalRef: journalRef)
-        jivm.setIndex()
     }
 }
 
